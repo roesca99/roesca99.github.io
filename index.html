@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display</title>
     <style>
         body {
             display: flex;
+            flex-direction: column; /* Arrange content vertically */
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white for visibility */
+            text-align: center; /* Center-align text */
         }
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 80%;  /* Limit the image width to 80% of the viewport */
+            max-height: 80%; /* Limit the image height to 80% of the viewport */
+            height: auto;    /* Keep the aspect ratio */
+            width: auto;     /* Keep the aspect ratio */
             border: 2px solid #ccc;
             border-radius: 8px;
+        }
+        h1 {
+            color: #d9534f;  /* Optional styling for header */
         }
     </style>
 </head>
 <body>
+    <h1>Nothing to see here...</h1>
     <img src="notthesite.png" alt="This isn't the site you're looking for">
 </body>
 </html>
